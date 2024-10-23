@@ -1,3 +1,3 @@
-# vocal-learning-project
+# Bioinformatics for everyone
 
-Please check our wiki page: https://github.com/leticiamagpali/vocal-learning-project/wiki
+Please check our wiki page: https://github.com/leticiamagpali/bioinformatics-for-everyone/wiki
