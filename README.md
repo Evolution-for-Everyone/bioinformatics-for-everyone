@@ -10,6 +10,11 @@ To acess all our workshops tutorials, data and materials, check our [wiki page](
 
 🦋 If you are a collaborator, find our project roadmap [here](https://github.com/Evolution-for-Everyone/bioinformatics-for-everyone/issues/1).
 
+🦋 Bioinformatics for Everyone has received funding and support from the following organizations:
+
+* Digital Alliance of Canada's EDIA Champions Program
+* OLS Open Seeds Mentoring and Training Program
+
 ## 🍄 What is Bioinformatics? ##
 > [!IMPORTANT]
 > In simple terms, **Bioinformatics is using computers and programing languages to analyse biological data** <br>
