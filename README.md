@@ -6,7 +6,7 @@ Welcome to Bioinformatics for Everyone, an outreach project to make bioinformati
 _if you are interested in having a workshop at your university, please reach out at leticiamagpali@dal.ca <br>_
 
 🦋 You can also learn by yourself right here! <br>
-To acess all our workshops tutorials, data and materials, check our [wiki page](https://github.com/leticiamagpali/bioinformatics-for-everyone/wiki).
+To acess all our workshops tutorials, data and materials, as well as outside resources, check our [wiki page](https://github.com/leticiamagpali/bioinformatics-for-everyone/wiki).
 
 🦋 If you are a collaborator, find our project roadmap [here](https://github.com/Evolution-for-Everyone/bioinformatics-for-everyone/issues/1).
 
