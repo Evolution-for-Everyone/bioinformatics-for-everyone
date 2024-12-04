@@ -10,8 +10,6 @@ To acess all our workshops tutorials, data and materials, check our [wiki page](
 
 ## 🍄 What is Bioinformatics? ##
 In simple terms, Bioinformatics is **using computers and programing languages to analyse biological data** - such as genetic sequences, measurements taken in the field, or the results of an experiment you did at the lab 
-<img src="https://www.canva.com/design/DAGYWMWafdo/Nhl3j216nsvpCBxXy0Jc2Q/view?utm_content=DAGYWMWafdo&utm_campaign=designshare&utm_medium=link&utm_source=editor" style="width:50%; height:auto;">
-
 
 ## 🍄 Why Bioinformatics for everyone? ##
 Bioinformatics is becoming increasignly important in every field of biology, from genomics and biochemestry to behavioral ecology and conservation. <br>
