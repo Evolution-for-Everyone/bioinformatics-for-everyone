@@ -8,6 +8,8 @@ _if you are interested in having a workshop at your university, please reach out
 🦋 You can also learn by yourself right here! <br>
 To acess all our workshops tutorials, data and materials, check our [wiki page](https://github.com/leticiamagpali/bioinformatics-for-everyone/wiki).
 
+🦋 If you are a collaborator, find our project roadmap [here](https://github.com/Evolution-for-Everyone/bioinformatics-for-everyone/issues/1).
+
 ## 🍄 What is Bioinformatics? ##
 > [!IMPORTANT]
 > In simple terms, **Bioinformatics is using computers and programing languages to analyse biological data** <br>
