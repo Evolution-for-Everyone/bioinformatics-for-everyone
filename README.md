@@ -1,6 +1,6 @@
 # Bioinformatics for everyone
 
-Welcome to Bioinformatics for Everyone, an outreach project to make bioinformatics more accessible to students across the world! <br>
+Welcome to Bioinformatics for Everyone, an outreach project to make bioinformatics more accessible to students and scientists across the world! <br>
 
 🦋 We offer free workshops in universities across the world! <br>
 _if you are interested in having a workshop at your university, please reach out at leticiamagpali@dal.ca <br>_
