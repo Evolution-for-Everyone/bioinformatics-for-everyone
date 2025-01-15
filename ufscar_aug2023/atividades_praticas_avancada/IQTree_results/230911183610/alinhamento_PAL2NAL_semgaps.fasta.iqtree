@@ -1,0 +1,193 @@
+IQ-TREE 1.6.12 built Aug 15 2019
+
+Input file name: alinhamento_PAL2NAL_semgaps.fasta
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 344811
+
+REFERENCES
+----------
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+To cite IQ-TREE please use:
+
+Lam-Tung Nguyen, Heiko A. Schmidt, Arndt von Haeseler, and Bui Quang Minh
+(2015) IQ-TREE: A fast and effective stochastic algorithm for estimating
+maximum likelihood phylogenies. Mol Biol Evol, 32:268-274.
+https://doi.org/10.1093/molbev/msu300
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 12 sequences with 670 codon sites
+Number of constant sites: 38 (= 5.67164% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 38 (= 5.67164% of all sites)
+Number of parsimony informative sites: 499
+Number of distinct site patterns: 639
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: MGK+F3X4+G4
+
+List of models sorted by BIC scores: 
+
+Model             LogL          AIC      w-AIC      AICc     w-AICc       BIC      w-BIC
+MGK+F3X4+G4     -12503.2662  25072.5324 + 0.7307  25076.0607 + 0.7520  25221.2725 + 0.9628
+MGK+F3X4+I+G4   -12503.2655  25074.5310 + 0.2690  25078.2791 + 0.2480  25227.7785 - 0.0372
+GY+F1X4+G4      -12549.4001  25152.8003 - 0.0000  25155.1554 - 0.0000  25274.4968 - 0.0000
+GY+F1X4+I+G4    -12549.4005  25154.8011 - 0.0000  25157.3346 - 0.0000  25281.0048 - 0.0000
+MGK+F1X4+G4     -12554.1276  25162.2551 - 0.0000  25164.6103 - 0.0000  25283.9516 - 0.0000
+MGK+F1X4+I+G4   -12554.1247  25164.2494 - 0.0000  25166.7829 - 0.0000  25290.4532 - 0.0000
+GY+F3X4+G4      -12593.2269  25252.4538 - 0.0000  25255.9821 - 0.0000  25401.1940 - 0.0000
+GY+F3X4+I+G4    -12593.2267  25254.4534 - 0.0000  25258.2015 - 0.0000  25407.7009 - 0.0000
+GY+F+G4         -12460.5031  25089.0062 - 0.0002  25113.4164 - 0.0000  25467.6175 - 0.0000
+GY+F+I+G4       -12460.4998  25090.9997 - 0.0001  25116.0339 - 0.0000  25474.1183 - 0.0000
+MGK+F3X4+I      -12674.9497  25415.8994 - 0.0000  25419.4277 - 0.0000  25564.6396 - 0.0000
+MG+F3X4+G4      -12680.2888  25424.5776 - 0.0000  25427.8931 - 0.0000  25568.8104 - 0.0000
+MG+F3X4+I+G4    -12680.2787  25426.5575 - 0.0000  25430.0858 - 0.0000  25575.2977 - 0.0000
+MGK+F3X4        -12691.3303  25446.6605 - 0.0000  25449.9760 - 0.0000  25590.8934 - 0.0000
+MG+F1X4+I+G4    -12710.5599  25475.1198 - 0.0000  25477.4749 - 0.0000  25596.8163 - 0.0000
+MG+F1X4+G4      -12714.1933  25480.3866 - 0.0000  25482.5701 - 0.0000  25597.5758 - 0.0000
+SCHN05+FU+G4    -12731.5677  25507.1355 - 0.0000  25508.6996 - 0.0000  25606.2956 - 0.0000
+SCHN05+FU+I+G4  -12731.5677  25509.1355 - 0.0000  25510.8445 - 0.0000  25612.8029 - 0.0000
+MGK+F1X4+I      -12742.4571  25538.9142 - 0.0000  25541.2693 - 0.0000  25660.6107 - 0.0000
+GY+F1X4+I       -12743.7759  25541.5519 - 0.0000  25543.9070 - 0.0000  25663.2484 - 0.0000
+KOSI07+FU+G4    -12762.4647  25568.9293 - 0.0000  25570.4935 - 0.0000  25668.0894 - 0.0000
+KOSI07+FU+I+G4  -12762.4643  25570.9285 - 0.0000  25572.6375 - 0.0000  25674.5959 - 0.0000
+GY+F1X4         -12761.9540  25575.9081 - 0.0000  25578.0916 - 0.0000  25693.0973 - 0.0000
+MGK+F1X4        -12763.3300  25578.6599 - 0.0000  25580.8435 - 0.0000  25695.8492 - 0.0000
+KOSI07+F+G4     -12639.7420  25443.4839 - 0.0000  25466.6730 - 0.0000  25813.0807 - 0.0000
+KOSI07+F+I+G4   -12639.7378  25445.4755 - 0.0000  25469.2707 - 0.0000  25819.5796 - 0.0000
+KOSI07+F3X4+G4  -12839.1013  25740.2026 - 0.0000  25743.3123 - 0.0000  25879.9282 - 0.0000
+KOSI07+F3X4+I+G4 -12839.0968  25742.1937 - 0.0000  25745.5092 - 0.0000  25886.4265 - 0.0000
+GY+F3X4+I       -12847.0165  25760.0330 - 0.0000  25763.5613 - 0.0000  25908.7731 - 0.0000
+MG+F3X4+I       -12854.8621  25773.7242 - 0.0000  25777.0397 - 0.0000  25917.9570 - 0.0000
+MG+F3X4         -12870.4721  25802.9443 - 0.0000  25806.0540 - 0.0000  25942.6699 - 0.0000
+GY+F3X4         -12878.7762  25821.5524 - 0.0000  25824.8680 - 0.0000  25965.7853 - 0.0000
+SCHN05+F+G4     -12716.7809  25597.5618 - 0.0000  25620.7509 - 0.0000  25967.1586 - 0.0000
+MG+F1X4+I       -12901.8167  25855.6334 - 0.0000  25857.8169 - 0.0000  25972.8226 - 0.0000
+SCHN05+F+I+G4   -12716.7814  25599.5628 - 0.0000  25623.3580 - 0.0000  25973.6668 - 0.0000
+MG+F1X4         -12920.7141  25891.4283 - 0.0000  25893.4469 - 0.0000  26004.1102 - 0.0000
+GY+F+I          -12730.8720  25629.7440 - 0.0000  25654.1543 - 0.0000  26008.3554 - 0.0000
+KOSI07+F1X4+G4  -12930.0346  25910.0692 - 0.0000  25912.0878 - 0.0000  26022.7511 - 0.0000
+KOSI07+F1X4+I+G4 -12930.0319  25912.0638 - 0.0000  25914.2473 - 0.0000  26029.2530 - 0.0000
+GY+F            -12755.8941  25677.7882 - 0.0000  25701.5834 - 0.0000  26051.8922 - 0.0000
+SCHN05+F3X4+G4  -12982.2547  26026.5094 - 0.0000  26029.6191 - 0.0000  26166.2350 - 0.0000
+SCHN05+F3X4+I+G4 -12982.2547  26028.5095 - 0.0000  26031.8250 - 0.0000  26172.7423 - 0.0000
+SCHN05+F1X4+G4  -13089.9195  26229.8390 - 0.0000  26231.8577 - 0.0000  26342.5210 - 0.0000
+SCHN05+F1X4+I+G4 -13089.9196  26231.8392 - 0.0000  26234.0227 - 0.0000  26349.0284 - 0.0000
+KOSI07+FU+I     -13114.3599  26272.7198 - 0.0000  26274.2839 - 0.0000  26371.8799 - 0.0000
+KOSI07+FU       -13137.9021  26317.8042 - 0.0000  26319.2301 - 0.0000  26412.4570 - 0.0000
+KOSI07+F+I      -12982.9307  26129.8614 - 0.0000  26153.0505 - 0.0000  26499.4582 - 0.0000
+KOSI07+F        -12999.6307  26161.2615 - 0.0000  26183.8533 - 0.0000  26526.3510 - 0.0000
+KOSI07+F3X4+I   -13191.1115  26444.2230 - 0.0000  26447.3327 - 0.0000  26583.9486 - 0.0000
+KOSI07+F3X4     -13214.7726  26489.5453 - 0.0000  26492.4561 - 0.0000  26624.7636 - 0.0000
+SCHN05+FU+I     -13240.9829  26525.9659 - 0.0000  26527.5300 - 0.0000  26625.1260 - 0.0000
+SCHN05+FU       -13276.7747  26595.5494 - 0.0000  26596.9753 - 0.0000  26690.2022 - 0.0000
+KOSI07+F1X4+I   -13276.0596  26602.1192 - 0.0000  26604.1378 - 0.0000  26714.8011 - 0.0000
+KOSI07+F1X4     -13293.5507  26635.1014 - 0.0000  26636.9619 - 0.0000  26743.2761 - 0.0000
+SCHN05+F+I      -13222.8333  26609.6666 - 0.0000  26632.8557 - 0.0000  26979.2633 - 0.0000
+SCHN05+F        -13250.7413  26663.4825 - 0.0000  26686.0744 - 0.0000  27028.5720 - 0.0000
+SCHN05+F3X4+I   -13529.9018  27121.8037 - 0.0000  27124.9134 - 0.0000  27261.5293 - 0.0000
+SCHN05+F3X4     -13573.7546  27207.5091 - 0.0000  27210.4199 - 0.0000  27342.7275 - 0.0000
+SCHN05+F1X4+I   -13623.0242  27296.0483 - 0.0000  27298.0670 - 0.0000  27408.7303 - 0.0000
+SCHN05+F1X4     -13662.7887  27373.5773 - 0.0000  27375.4378 - 0.0000  27481.7520 - 0.0000
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: MGK+F3X4+G4
+
+State frequencies: 
+  pi(AAA) = 0.0248  pi(AAC) = 0.0360  pi(AAG) = 0.0400  pi(AAT) = 0.0243
+  pi(ACA) = 0.0111  pi(ACC) = 0.0161  pi(ACG) = 0.0179  pi(ACT) = 0.0109
+  pi(AGA) = 0.0099  pi(AGC) = 0.0144  pi(AGG) = 0.0159  pi(AGT) = 0.0097
+  pi(ATA) = 0.0194  pi(ATC) = 0.0282  pi(ATG) = 0.0313  pi(ATT) = 0.0190
+  pi(CAA) = 0.0180  pi(CAC) = 0.0261  pi(CAG) = 0.0290  pi(CAT) = 0.0176
+  pi(CCA) = 0.0081  pi(CCC) = 0.0117  pi(CCG) = 0.0130  pi(CCT) = 0.0079
+  pi(CGA) = 0.0072  pi(CGC) = 0.0104  pi(CGG) = 0.0116  pi(CGT) = 0.0070
+  pi(CTA) = 0.0141  pi(CTC) = 0.0204  pi(CTG) = 0.0227  pi(CTT) = 0.0138
+  pi(GAA) = 0.0250  pi(GAC) = 0.0363  pi(GAG) = 0.0403  pi(GAT) = 0.0245
+  pi(GCA) = 0.0112  pi(GCC) = 0.0162  pi(GCG) = 0.0180  pi(GCT) = 0.0110
+  pi(GGA) = 0.0100  pi(GGC) = 0.0144  pi(GGG) = 0.0161  pi(GGT) = 0.0098
+  pi(GTA) = 0.0196  pi(GTC) = 0.0284  pi(GTG) = 0.0315  pi(GTT) = 0.0191
+  pi(TAC) = 0.0143  pi(TAT) = 0.0097  pi(TCA) = 0.0044  pi(TCC) = 0.0064
+  pi(TCG) = 0.0071  pi(TCT) = 0.0043  pi(TGC) = 0.0057  pi(TGG) = 0.0063
+  pi(TGT) = 0.0038  pi(TTA) = 0.0077  pi(TTC) = 0.0112  pi(TTG) = 0.0124
+  pi(TTT) = 0.0076
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 1.7477
+
+ Category  Relative_rate  Proportion
+  1         0.2612         0.2500
+  2         0.6252         0.2500
+  3         1.0622         0.2500
+  4         2.0515         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -12499.6451 (s.e. 217.2202)
+Unconstrained log-likelihood (without tree): -4310.1258
+Number of free parameters (#branches + #model parameters): 33
+Akaike information criterion (AIC) score: 25065.2902
+Corrected Akaike information criterion (AICc) score: 25068.8185
+Bayesian information criterion (BIC) score: 25214.0304
+
+Total tree length (sum of branch lengths): 5.5702
+Sum of internal branch lengths: 3.2407 (58.1789% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Chicken' is drawn at root
+
+NOTE: Branch lengths are interpreted as number of nucleotide substitutions per codon site!
+      Rescale them by 1/3 if you want to have #nt substitutions per nt site
+
++-------------Chicken
+|
++-----Duck
+|
+|                                                              +--Chimpanzee
+|                                                           +--|
+|                                                           |  +--Human
+|                                                        +--|
+|                                                        |  +--Orangutan
+|                                                  +-----|
+|                                                  |     +--Rhesus_macaque
+|                                               +--|
+|                                               |  |       +--Cow
+|                                               |  |  +----|
+|                                               |  |  |    +--Sheep
+|                                               |  +--|
+|                                               |     +-----Pig
+|                                          +----|
+|                                          |    +---------Dog
++------------------------------------------|
+                                           |         +----Mouse
+                                           +---------|
+                                                     +-----Rat
+
+Tree in newick format:
+
+(Chicken:0.6255337000,Duck:0.2651573700,((((((Chimpanzee:0.0154769200,Human:0.0184409800):0.0213081500,Orangutan:0.0239312400):0.0413306100,Rhesus_macaque:0.0702082200):0.2899191100,((Cow:0.0481569700,Sheep:0.0695301300):0.2491681600,Pig:0.2712850600):0.1514008900):0.0127220500,Dog:0.4304276700):0.2148302000,(Mouse:0.2207331800,Rat:0.2706488100):0.4336497200):1.8263690500);
+
+TIME STAMP
+----------
+
+Date and time: Mon Sep 11 18:55:00 2023
+Total CPU time used: 200.552 seconds (0h:3m:20s)
+Total wall-clock time used: 201.493 seconds (0h:3m:21s)
+

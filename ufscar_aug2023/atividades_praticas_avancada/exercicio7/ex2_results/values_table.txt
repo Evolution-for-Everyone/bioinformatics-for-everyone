@@ -1,0 +1,29 @@
+results_1.txt:lnL = -927.178200
+results_1.txt-  0.10683  0.27421
+results_1.txt-
+results_1.txt-t= 0.1068  S=   152.9  N=   447.1  dN/dS=  0.2742  dN = 0.0213  dS = 0.0776
+--
+results_2.txt:lnL = -926.280300
+results_2.txt-  0.10533  1.88371  0.32004
+results_2.txt-
+results_2.txt-t= 0.1053  S=   165.8  N=   434.2  dN/dS=  0.3200  dN = 0.0221  dS = 0.0691
+--
+results_3.txt:lnL = -844.507294
+results_3.txt-  0.10684  0.11807
+results_3.txt-
+results_3.txt-t= 0.1068  S=    70.6  N=   529.4  dN/dS=  0.1181  dN = 0.0189  dS = 0.1605
+--
+results_4.txt:lnL = -842.214727
+results_4.txt-  0.10686  2.71032  0.12662
+results_4.txt-
+results_4.txt-t= 0.1069  S=    73.4  N=   526.6  dN/dS=  0.1266  dN = 0.0193  dS = 0.1526
+--
+results_5.txt:lnL = -758.551863
+results_5.txt-  0.12089  0.06277
+results_5.txt-
+results_5.txt-t= 0.1209  S=    40.5  N=   559.5  dN/dS=  0.0628  dN = 0.0201  dS = 0.3198
+--
+results_6.txt:lnL = -756.568200
+results_6.txt-  0.12527  2.53119  0.06698
+results_6.txt-
+results_6.txt-t= 0.1253  S=    45.2  N=   554.8  dN/dS=  0.0670  dN = 0.0204  dS = 0.3041

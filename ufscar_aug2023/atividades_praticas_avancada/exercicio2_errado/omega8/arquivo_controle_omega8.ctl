@@ -1,0 +1,15 @@
+seqfile   = alinhamento_PAL2NAL_semgaps.phy        				* Path to the alignment file
+treefile = Mx_arvore.tre    									* Path to the tree file
+outfile = out_exercicio1_M0.txt           						* Path to the output file
+noisy  = 3                         								* Display moderate information on the screen
+verbose = 1                        								* Detailed output file
+seqtype = 1                        								* Codon data
+ndata  = 1                        								* One gene alignment
+icode  = 0                         								* Universal genetic code
+cleandata = 0                   								* Do not remove sites with ambiguity data
+model  = 0                        								* One ω for all branches (M0 and site models) 
+NSsites = 0                        								* One ω for all sites (M0 and branch model)
+CodonFreq = 2    												* Use F3x4 model
+clock  = 0                         								* Assume no clock
+fix_omega = 0                    								* Enables option to estimate omega
+omega  = 1.6                     								* Initial omega value

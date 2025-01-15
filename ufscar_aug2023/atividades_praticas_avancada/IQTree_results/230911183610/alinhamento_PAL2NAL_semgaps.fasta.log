@@ -1,0 +1,176 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    fermat (AVX2, FMA3, 1009 GB RAM)
+Command: ../../iqtree -s alinhamento_PAL2NAL_semgaps.fasta -st CODON1 -m TEST
+Seed:    344811 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon Sep 11 18:50:16 2023
+Kernel:  AVX+FMA - 1 threads (128 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 128 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file alinhamento_PAL2NAL_semgaps.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Converting to codon sequences with genetic code 1 ...
+Alignment has 12 sequences with 670 columns, 639 distinct patterns
+499 parsimony-informative, 133 singleton sites, 38 constant sites
+                Gap/Ambiguity  Composition  p-value
+   1  Chicken           2.24%    failed      0.00%
+   2  Duck              1.79%    failed      0.00%
+   3  Chimpanzee        1.19%    passed     99.96%
+   4  Human             1.19%    passed     99.92%
+   5  Orangutan         1.19%    passed     99.94%
+   6  Rhesus_macaque    1.34%    passed    100.00%
+   7  Cow               3.28%    passed     98.77%
+   8  Sheep             2.39%    passed     97.19%
+   9  Pig               1.19%    passed     84.26%
+  10  Dog               1.94%    passed     98.78%
+  11  Mouse             5.82%    passed     64.21%
+  12  Rat               2.69%    passed     90.65%
+****  TOTAL             2.19%  2 sequences failed composition chi2 test (p-value<5%; df=60)
+
+Creating fast initial parsimony tree by random order stepwise addition...
+0.057 seconds, parsimony score: 2020 (based on 632 sites)
+NOTE: ModelFinder requires 15 MB RAM!
+ModelFinder will test 60 codon models (sample size: 670) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  MG+F1X4       12920.714    25  25891.428    25893.447    26004.110
+  2  MG+F1X4+I     12901.817    26  25855.633    25857.817    25972.823
+  3  MG+F1X4+G4    12714.193    26  25480.387    25482.570    25597.576
+  4  MG+F1X4+I+G4  12710.560    27  25475.120    25477.475    25596.816
+  5  MG+F3X4       12870.472    31  25802.944    25806.054    25942.670
+  6  MG+F3X4+I     12854.862    32  25773.724    25777.040    25917.957
+  7  MG+F3X4+G4    12680.289    32  25424.578    25427.893    25568.810
+  8  MG+F3X4+I+G4  12680.279    33  25426.558    25430.086    25575.298
+  9  MGK+F1X4      12763.330    26  25578.660    25580.843    25695.849
+ 10  MGK+F1X4+I    12742.457    27  25538.914    25541.269    25660.611
+ 11  MGK+F1X4+G4   12554.128    27  25162.255    25164.610    25283.952
+ 12  MGK+F1X4+I+G4 12554.125    28  25164.249    25166.783    25290.453
+ 13  MGK+F3X4      12691.330    32  25446.661    25449.976    25590.893
+ 14  MGK+F3X4+I    12674.950    33  25415.899    25419.428    25564.640
+ 15  MGK+F3X4+G4   12503.266    33  25072.532    25076.061    25221.273
+ 16  MGK+F3X4+I+G4 12503.266    34  25074.531    25078.279    25227.778
+ 17  GY+F1X4       12761.954    26  25575.908    25578.092    25693.097
+ 18  GY+F1X4+I     12743.776    27  25541.552    25543.907    25663.248
+ 19  GY+F1X4+G4    12549.400    27  25152.800    25155.155    25274.497
+ 20  GY+F1X4+I+G4  12549.401    28  25154.801    25157.335    25281.005
+ 21  GY+F3X4       12878.776    32  25821.552    25824.868    25965.785
+ 22  GY+F3X4+I     12847.016    33  25760.033    25763.561    25908.773
+ 23  GY+F3X4+G4    12593.227    33  25252.454    25255.982    25401.194
+ 24  GY+F3X4+I+G4  12593.227    34  25254.453    25258.201    25407.701
+ 25  GY+F          12755.894    83  25677.788    25701.583    26051.892
+ 26  GY+F+I        12730.872    84  25629.744    25654.154    26008.355
+ 27  GY+F+G4       12460.503    84  25089.006    25113.416    25467.617
+ 28  GY+F+I+G4     12460.500    85  25091.000    25116.034    25474.118
+ 29  KOSI07+FU     13137.902    21  26317.804    26319.230    26412.457
+ 30  KOSI07+FU+I   13114.360    22  26272.720    26274.284    26371.880
+ 31  KOSI07+FU+G4  12762.465    22  25568.929    25570.493    25668.089
+ 32  KOSI07+FU+I+G4 12762.464    23  25570.929    25572.638    25674.596
+ 33  KOSI07+F1X4   13293.551    24  26635.101    26636.962    26743.276
+ 34  KOSI07+F1X4+I 13276.060    25  26602.119    26604.138    26714.801
+ 35  KOSI07+F1X4+G4 12930.035    25  25910.069    25912.088    26022.751
+ 36  KOSI07+F1X4+I+G4 12930.032    26  25912.064    25914.247    26029.253
+ 37  KOSI07+F3X4   13214.773    30  26489.545    26492.456    26624.764
+ 38  KOSI07+F3X4+I 13191.112    31  26444.223    26447.333    26583.949
+ 39  KOSI07+F3X4+G4 12839.101    31  25740.203    25743.312    25879.928
+ 40  KOSI07+F3X4+I+G4 12839.097    32  25742.194    25745.509    25886.427
+ 41  KOSI07+F      12999.631    81  26161.261    26183.853    26526.351
+ 42  KOSI07+F+I    12982.931    82  26129.861    26153.051    26499.458
+ 43  KOSI07+F+G4   12639.742    82  25443.484    25466.673    25813.081
+ 44  KOSI07+F+I+G4 12639.738    83  25445.476    25469.271    25819.580
+ 45  SCHN05+FU     13276.775    21  26595.549    26596.975    26690.202
+ 46  SCHN05+FU+I   13240.983    22  26525.966    26527.530    26625.126
+ 47  SCHN05+FU+G4  12731.568    22  25507.135    25508.700    25606.296
+ 48  SCHN05+FU+I+G4 12731.568    23  25509.135    25510.844    25612.803
+ 49  SCHN05+F1X4   13662.789    24  27373.577    27375.438    27481.752
+ 50  SCHN05+F1X4+I 13623.024    25  27296.048    27298.067    27408.730
+ 51  SCHN05+F1X4+G4 13089.920    25  26229.839    26231.858    26342.521
+ 52  SCHN05+F1X4+I+G4 13089.920    26  26231.839    26234.023    26349.028
+ 53  SCHN05+F3X4   13573.755    30  27207.509    27210.420    27342.727
+ 54  SCHN05+F3X4+I 13529.902    31  27121.804    27124.913    27261.529
+ 55  SCHN05+F3X4+G4 12982.255    31  26026.509    26029.619    26166.235
+ 56  SCHN05+F3X4+I+G4 12982.255    32  26028.509    26031.825    26172.742
+ 57  SCHN05+F      13250.741    81  26663.483    26686.074    27028.572
+ 58  SCHN05+F+I    13222.833    82  26609.667    26632.856    26979.263
+ 59  SCHN05+F+G4   12716.781    82  25597.562    25620.751    25967.159
+ 60  SCHN05+F+I+G4 12716.781    83  25599.563    25623.358    25973.667
+Akaike Information Criterion:           MGK+F3X4+G4
+Corrected Akaike Information Criterion: MGK+F3X4+G4
+Bayesian Information Criterion:         MGK+F3X4+G4
+Best-fit model: MGK+F3X4+G4 chosen according to BIC
+
+All model information printed to alinhamento_PAL2NAL_semgaps.fasta.model.gz
+CPU time for ModelFinder: 81.852 seconds (0h:1m:21s)
+Wall-clock time for ModelFinder: 82.286 seconds (0h:1m:22s)
+
+NOTE: 15 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -13081.664
+2. Current log-likelihood: -12503.902
+3. Current log-likelihood: -12503.266
+Optimal log-likelihood: -12503.266
+Nonsynonymous/synonymous ratio (omega): 0.332
+Transition/transversion ratio (kappa): 2.470
+Gamma shape alpha: 1.844
+Parameters optimization took 3 rounds (4.167 sec)
+Computing ML distances based on estimated model parameters... 1.108 sec
+Computing BIONJ tree...
+0.051 seconds
+Log-likelihood of BIONJ tree: -12500.120
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 99 parsimony trees... 0.053 second
+Computing log-likelihood of 98 initial trees ... 19.829 seconds
+Current best score: -12500.120
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -12499.645
+Iteration 10 / LogL: -12537.540 / Time: 0h:0m:41s
+Iteration 20 / LogL: -12588.759 / Time: 0h:0m:57s
+Finish initializing candidate tree set (7)
+Current best tree score: -12499.645 / CPU time: 51.878
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -12730.205 / Time: 0h:1m:12s (0h:2m:58s left)
+Iteration 40 / LogL: -12584.084 / Time: 0h:1m:32s (0h:2m:25s left)
+Iteration 50 / LogL: -12633.282 / Time: 0h:1m:48s (0h:1m:52s left)
+Iteration 60 / LogL: -12579.115 / Time: 0h:2m:5s (0h:1m:27s left)
+Iteration 70 / LogL: -12699.519 / Time: 0h:2m:26s (0h:1m:6s left)
+Iteration 80 / LogL: -12580.969 / Time: 0h:2m:43s (0h:0m:43s left)
+Iteration 90 / LogL: -12693.499 / Time: 0h:2m:58s (0h:0m:22s left)
+Iteration 100 / LogL: -12547.707 / Time: 0h:3m:16s (0h:0m:1s left)
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:3m:20s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -12499.645
+Optimal log-likelihood: -12499.645
+Nonsynonymous/synonymous ratio (omega): 0.322
+Transition/transversion ratio (kappa): 2.509
+Gamma shape alpha: 1.748
+Parameters optimization took 1 rounds (0.830 sec)
+BEST SCORE FOUND : -12499.645
+Total tree length: 5.570
+
+Total number of iterations: 102
+CPU time used for tree search: 194.276 sec (0h:3m:14s)
+Wall-clock time used for tree search: 194.894 sec (0h:3m:14s)
+Total CPU time used: 200.552 sec (0h:3m:20s)
+Total wall-clock time used: 201.407 sec (0h:3m:21s)
+
+Analysis results written to: 
+  IQ-TREE report:                alinhamento_PAL2NAL_semgaps.fasta.iqtree
+  Maximum-likelihood tree:       alinhamento_PAL2NAL_semgaps.fasta.treefile
+  Likelihood distances:          alinhamento_PAL2NAL_semgaps.fasta.mldist
+  Screen log file:               alinhamento_PAL2NAL_semgaps.fasta.log
+
+Date and Time: Mon Sep 11 18:55:00 2023
