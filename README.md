@@ -2,7 +2,7 @@
 
 Welcome to Bioinformatics for Everyone, an outreach project to make bioinformatics more accessible to students and scientists across the world! <br>
 
-🍄 Our **mission** is to promote equitable access to knowledge, resources and opportunities in evolutionary biology, empowering equity-deserving to become scientists.
+🍄 Our **mission** is to promote equitable access to knowledge, resources and opportunities in evolutionary biology, empowering equity-deserving students to become scientists.
 
 🦋 We offer free workshops in universities! <br>
 _if you are interested in having a workshop at your university, please reach out at leticiamagpali@dal.ca <br>_
