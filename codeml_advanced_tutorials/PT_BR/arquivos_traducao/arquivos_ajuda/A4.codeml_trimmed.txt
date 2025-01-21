@@ -1,0 +1,67 @@
+       seqfile = seqfile.txt          * sequence data filename
+      treefile = treefile_M0.txt      * SET THIS for tree file with ML branch É
+      outfile = results.txt           * main result file name
+
+        noisy = 9         * lots of rubbish on the screen
+      verbose = 1         * detailed output
+      runmode = 0         * user defined tree
+      seqtype = 1         * codons
+    CodonFreq = 2         * F3X4 for codon frequencies
+
+        model = 0         * one omega ratio for all branches
+      NSsites = 0         * SET THIS for for all models
+
+        icode = 0         * universal code
+
+    fix_kappa = 1         * kappa fixed
+        kappa = 3.49676   * SET THIS for all models
+
+    fix_omega = 0         * omega to be estimated 
+        omega = 5         * initial omega
+
+        ncatG = 3         * SET THIS for models M3, M7 and M8        
+
+  fix_blength = 2         * fixed branch lengths from tree file
+
+
+
+		 * Model M0 settings:
+    			 * treefile = treefile_M0.txt      * SET THIS for tree file ...
+   			 * NSsites = 0                     * SET THIS for M0
+                         * kappa = 3.49676                 * SET THIS to fix kappa ...
+
+		 * Model M3 (k=3) settings:
+ 		         * treefile = treefile_M3.txt      * SET THIS for tree file É
+                         * NSsites = 3                     * SET THIS for M3
+                         * kappa = 3.69796                 * SET THIS to fix kappa ...
+       			 * ncatG = 3      		   * SET THIS for model M3 
+
+		 * Model M1a settings:
+		         * treefile = treefile_M1.txt      * SET THIS for tree file ...
+    			 * NSsites = 1                     * SET THIS for M1
+                         * kappa = 3.48438                 * SET THIS to fix kappa ...
+
+		 * Model M2a settings:
+		         * treefile = treefile_M2.txt      * SET THIS for tree file ...
+                         * NSsites = 2                     * SET THIS for M2
+                         * kappa = 3.76697                 * SET THIS to fix kappa ...
+
+		 * Model M7 settings:
+   		         * treefile = treefile_M7.txt      * SET THIS for tree file ...
+                         * NSsites = 7                     * SET THIS for M7
+                         * kappa = 2.97174                 * SET THIS to fix kappa É
+                         * ncatG = 10                      * SET THIS for 10 ...
+
+		 * Model M8 settings:
+		         * treefile = treefile_M8.txt      * SET THIS for tree file ...
+                         * NSsites = 8                     * SET THIS for M8
+                         * kappa = 3.75329                 * SET THIS to fix kappa ...
+                         * ncatG = 10                      * SET THIS for 10 ...
+
+
+
+
+
+
+
+

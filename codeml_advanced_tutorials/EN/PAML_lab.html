@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)https://awarnach.mathstat.dal.ca/~joeb/PAML_lab/lab.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>PAML_lab</title>
+
+
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+
+kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb
+}
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+  body {
+    padding: 2cm; 
+  }
+}
+</style>
+
+
+</head>
+
+<body>
+
+<h1 id="toc_0">PAML ACTIVITIES</h1>
+
+<hr>
+
+<p>2022 Workshop on Molecular Evolution at the MBL</p>
+
+<hr>
+
+<p>Follow this <a href="https://molevolworkshop.github.io/schedule/">link to go to back to workshop schedule page</a>.</p>
+
+<p>Follow this <a href="https://molevolworkshop.github.io/faculty-bielawski/">link to go to back to the Bielawski faculty page</a>.
+<br></p>
+
+<h2 id="toc_1">Overview</h2>
+
+<p>The objective of this activity is to help you understand how to use different codon models, and how to test for selection using PAML (and specifically the CODEML program). The activities are designed to build general analytical skills, and are just as relevant to analyses carried out using other software packages, such as HyPhy.</p>
+
+<p>The tutorial is divided into 4 exercises.</p>
+
+<ol>
+<li>Maximum likelihood estimation (by hand)</li>
+<li>Sensitivity of <em>ω</em></li>
+<li>LRTs for alternative hypotheses about temporal changes in selection pressure</li>
+<li>Test for sites evolving by positive selection in the <em>nef</em> gene of HIV-2</li>
+</ol>
+
+<p><strong>NOTE: Beginning in 2023, in <em>The Workshop on Molecular Evolution</em> we will ONLY do excercises 1, 3 &amp; 4.  This includes the optional step (No. 8) of excercise 4.</strong></p>
+
+<p>The next section (<strong>Accessing the files</strong>) describes how to access and work with the files required for each of the exercises. You will access the files differently depending on whether you are doing the labs at the workshop or at home independently of the workshop. </p>
+
+<p><strong>Note</strong> that running the program involves modifying input files and creating output files.  <em>It is best practice to (i) create a separate directory for each exercise or real-data analysis that you want to do and (ii) record and save simple-text notes about the motivation and details of each real-data analysis and store them within the directory that created for each analysis</em>.  The latter is a kind of “read me” file that you will be glad to have after you have done many analyses on your real data and have begun to forget, or mix up, the details.</p>
+
+<p>Here are the slides for the PAML learning activity: <a href="http://awarnach.mathstat.dal.ca/%7Ejoeb/PAML_lab/resources/pamlDEMO_2024.pdf">2024_slides</a></p>
+
+<p>Here is a copy of the book chapter that accompanies these exercises: <a href="http://awarnach.mathstat.dal.ca/%7Ejoeb/PAML_lab/resources/Bielawski_book_chapter.pdf">Book_Chapter.pdf</a></p>
+
+<p>This <a href="http://awarnach.mathstat.dal.ca/%7Ejoeb/PAML_lab/Resources.html">page</a> has links to useful documents and many <strong>additional resources</strong>.</p>
+
+<p><br></p>
+
+<h2 id="toc_2">Accessing the files</h2>
+
+<p><strong>1. If you are doing the lab AT THE WORKSHOP:</strong>
+On the virtual machines we will be using in the 2022 workshop, there will be a symlink in your home directory named "moledata" that takes you to the course data files. There you will find directories for the various labs (e.g., MSAlab, revbayes, PamlLab, etc.).</p>
+
+<p>To view the list of labs type:</p>
+
+<p><code>ls ~/moledata</code></p>
+
+<p>To view the contents of the Paml Lab type:</p>
+
+<p><code>ls -1 ~/moledata/PamlLab</code></p>
+
+<p>This will reveal the directories for each excercise:</p>
+
+<p><code>ex1</code><br>
+<code>ex2</code><br>
+<code>ex3</code><br>
+<code>ex4</code><br></p>
+
+<p>The files are already on the virtual machine you are using. <em>However, you will want to run each exercise in a separate directory that you will create</em>. So, create a new directory. The name of the new directory is up to you, but pick something informative (e.g., ~/PAML_ex1).</p>
+
+<p>To <em>copy</em> the files required for exercise 1 just type:</p>
+
+<p><code>cp ~/moledata/PamlLab/ex1/* ~/PAML_ex1</code></p>
+
+<p>Now you are ready to do exercise 1 within <code>~/PAML_ex1</code></p>
+
+<p><br>
+<strong>2. Renaming files:</strong> For all exercises you will need to rename the control file by removing the exercise (exN) prefix.  You can do this by using the <code>cp</code> command. </p>
+
+<p>Here is an example for exercise 1: </p>
+
+<p><code>cp ex1_codeml.ctl codeml.ctl</code></p>
+
+<p>WARNING: Re-running PAML within a directory will overwrite all files within that directory!  Make sure you rename all files you want to keep!</p>
+
+<p><br></p>
+
+<p><strong>3. If you are doing the lab INDEPNDENTLY of the workshop:</strong>
+You can do this lab by downloading all the necessary files from an archive <a href="https://bitbucket.org/EvoWorks/protocol-paml-lab-at-mbl-workshop/downloads/">here</a>, or you can download the files individually for each exercise as you need them <a href="http://awarnach.mathstat.dal.ca/%7Ejoeb/PAML_lab/PAML_Lab_files.html">here</a>. </p>
+
+<p>Either way, it is still <em>"best practice" to run each exercise in a separate working directory that you will create</em> (<em>e.g</em>., <code>PAML_ex1</code>), <em>and work with copies of the required files within that directory</em>.</p>
+
+<p><br></p>
+
+<h2 id="toc_3">Exercise 1</h2>
+
+<p>The objective of this activity is to use CODEML to evaluate the likelihood of the <em>GstD1</em> sequences for a variety of <em>ω</em> values. Plot log-likelihood scores against the values of <em>ω</em> and determine the maximum likelihood estimate of <em>ω</em>. Check your finding by running CODEML’s hill-climbing algorithm.</p>
+
+<p><img src="./PAML_lab_files/Concept_figure1.jpg" alt="Concept_plot1"></p>
+
+<ol>
+<li><p>Find the input files for Exercise 1  (<strong>ex1_codeml.ctl, seqfile.txt</strong>) and familiarize yourself with them. Pay close attention to the contents of the modified control file called <strong>ex1_codeml.ctl</strong>. </p></li>
+<li><p>Remember to create a directory where you want your results to go, and place all your files within it. Now open a terminal, move to the directory that contains your files. When you are ready to run CODEML, delete the <strong>ex1_</strong> prefix (the control file must be called <strong>codeml.ctl</strong>). Now you can run CODEML. </p></li>
+<li><p>Familiarize yourself with the results (see annotations in <a href="http://awarnach.mathstat.dal.ca/%7Ejoeb/PAML_lab/exercise1/ex1_HelpFile.pdf">ex1_HelpFile.pdf</a>). If you have not edited the control file the results will be written to a file called <strong>results.txt</strong>. Identify the line within the results file that gives the likelihood score for the example dataset.</p></li>
+<li><p>Now <em>change and save</em> the control file and re-run CODEML for a different fixed value of <em>ω</em>. The control file "quick guide" might be helpful here (<a href="http://awarnach.mathstat.dal.ca/%7Ejoeb/PAML_lab/exercise1/ex1_control_file_QuickGuide.pdf">quick guide</a>). The objective is to compute the likelihood of the example dataset given a fixed value of <em>ω</em>. <em>Change the control file as follows</em>:</p>
+
+<ul>
+<li><p>Change the name of your result file (via <code>outfile=</code> in the control file) or you will overwrite your previous results!</p></li>
+<li><p>Change the fixed value for omega by changing the value for <code>omega=</code> in the control file. The values for this exercise are provided as comments at the bottom of the example control file that has been provided to you.</p></li>
+</ul></li>
+<li><p>Repeat Step 4 for each value of <em>ω</em> according to the comments of the example control file (<em>e.g</em>., <em>ω</em> = 0.005, 0.01, 0.05, 0.1, 0.2, 0.4, 0.8, 1.6, 2.0).</p></li>
+<li><p>Use your favorite spread sheet or statistical package to plot the likelihood score (y-axis) against the fixed value for omega (x-axis). Use a logarithmic scale for the x-axis (do not transform <em>ω</em>). Your figure should look something like this: <a href="http://awarnach.mathstat.dal.ca/%7Ejoeb/PAML_lab/exercise1/ex1_plot_template.pdf">ex1 plot template.pdf</a> (note: the data points have been intentionally omitted from this version of the plot; you need to generate the data for yourself).</p>
+
+<ul>
+<li>For help plotting your results see the additional resources on <a href="http://awarnach.mathstat.dal.ca/%7Ejoeb/PAML_lab/Resources.html">this page</a>.</li>
+</ul></li>
+<li><p>From your plot, try to answer this question:</p>
+
+<ul>
+<li><em>What is the value of ω that will maximize the likelihood score (i.e., the MLE)</em>?</li>
+</ul></li>
+<li><p>Now change the control file so that CODEML will use its hill-climbing algorithm to find the MLE; set <code>fix_omega=0</code> in the control file. Compare the result to your guess from Step 7.</p>
+
+<ul>
+<li><em>How good was your estimate of the MLE</em>?</li>
+</ul></li>
+</ol>
+
+<p><br></p>
+
+<h2 id="toc_4">Exercise 2</h2>
+
+<p>in this exercise you will investigate the sensitivity of ω to the transition/transversion ratio (<em>kappa</em>), and to the assumed codon frequencies (<em>π</em>'s). After you collect the required data you will determine which assumptions yield the largest and smallest values of S, and what effect it has on the value of <em>ω</em>.</p>
+
+<p><img src="./PAML_lab_files/Concept_figure2.jpg" alt="Concept_plot2"></p>
+
+<ol>
+<li><p>Find the files for Exercise 2 (<strong>ex2_codeml.ctl, seqfile.txt</strong>) and familiarize yourself with them. It would be best to create a new directory for Exercise 2. When you are ready to run CODEML, delete the <strong>ex2_</strong> prefix (the control file must be called <strong>codeml.ctl</strong>).</p></li>
+<li><p>Run CODEML using the settings in the control file for Exercise 2. Familiarize yourself with the results (<a href="http://awarnach.mathstat.dal.ca/%7Ejoeb/PAML_lab/exercise2/ex2_HelpFile.pdf">ex2 HelpFile.pdf</a>). In addition to the likelihood score you must be able to identify the part of the result file that provides estimates of the following:</p>
+
+<ul>
+<li><p>Number of synonymous or nonsynonymous sites (S and N))</p></li>
+<li><p>Synonymous and nonsynonymous rates (dS and dN)</p></li>
+</ul></li>
+<li><p>As in Exercise 1, you will need to <em>change and save</em> the control files and re-run CODEML. The control file "quick guide" might be helpful here (<a href="http://awarnach.mathstat.dal.ca/%7Ejoeb/PAML_lab/exercise2/ex2_control_file_QuickGuide.pdf">quick guide</a>).The objective is to compute the likelihood of the example dataset under different model assumptions. To do this you must:</p>
+
+<ul>
+<li><p><em>Change</em> the name of the main result file (via <code>outfile=</code> in the control file) or you will overwrite your previous results</p></li>
+<li><p><em>Change</em> the model assumptions about codon frequencies (via <code>CodonFreq=</code>) and kappa (via <code>kappa=</code> and <code>fix_kappa=</code>).</p></li>
+</ul></li>
+<li><p>Repeat step 3 for each set of assumptions about codon frequencies and kappa given as comments at the bottom of the example control file, and shown in the figure below.</p>
+
+<p><img src="./PAML_lab_files/Concept_figure2.2.jpg" alt="Concept_plot2"></p></li>
+<li><p>In your favorite spreadsheet program create a table like <strong>Table E2</strong> in the slides (see <a href="http://awarnach.mathstat.dal.ca/%7Ejoeb/PAML_lab/exercise2/ex2_table_template.pdf">ex2 table template.pdf</a>) and fill it in with your results. </p></li>
+<li><p>Use your table to determine:</p>
+
+<ul>
+<li><em>Which assumptions yield the largest and smallest values of S</em>?</li>
+<li><em>What is the effect on ω</em>?</li>
+<li><em>What model would you choose</em>?</li>
+</ul></li>
+</ol>
+
+<p><br></p>
+
+<h2 id="toc_5">Exercise 3</h2>
+
+<p>The objective of this exercise is to use three LRTs to evaluate the following possibilities: (1) the mutation rate of Ldh-C has increased relative to Ldh-A, (2) a burst of positive selection for functional divergence occurred following the duplication event that gave rise to Ldh-C, and (3) there was a long term shift in selective constraints following the duplication event that gave rise to Ldh-C.</p>
+
+<ol>
+<li><p>Obtain the files for Exercise 3 from the course web-site (<strong>ex3_codeml.ctl,  seqfile.txt, treeH0.txt,  treeH1.txt,  treeH2.txt,  treeH3.txt</strong>). The tree files represent different hypotheses denoted H0, H1, H2 &amp; H3 (see diagram below, or download this file <a href="http://awarnach.mathstat.dal.ca/%7Ejoeb/PAML_lab/exercise3/LDH_gene_tree.pdf">genetree</a>). These evolutionary concepts described above are covered by these four precise hypotheses:</p>
+
+<ul>
+<li><p>H0: Homogeneous selection pressure over the tree (concept = any rate differences are due to changes in mutation rate).</p></li>
+<li><p>H1: Episodic change in selection pressure in Ldh-C (concept = only in the branch that immediately follows the gene duplication event).</p></li>
+<li><p>H2: A long term shift in selection pressure in Ldh-C only (concept = Ldh-C has a novel selection pressure, as compared to its ancestors, whereas Ldh-A remains subject to the ancestral level of selection pressure).</p></li>
+<li><p>H3: A long term shift in selection on both Ldh-C and Ldh-A (concept = both paralogous lineages experience novel selection pressures; i.e., different from each other, and from the ancestor).</p></li>
+</ul>
+
+<p><img src="./PAML_lab_files/LDH_gene_tree.jpg" alt="genetree"></p></li>
+<li><p>Run CODEML using the settings in the control file for Exercise 3. Familiarize yourself with the results (<a href="http://awarnach.mathstat.dal.ca/%7Ejoeb/PAML_lab/exercise3/ex3_HelpFile.pdf">ex3_HelpFile.pdf</a>). In addition to the likelihood score you must be able to identify the branch-specific estimates of the <em>ω</em> parameter. (In the first run, the branch specific values for <em>ω</em>  will all be the same. In later runs there will be differences among some branches).</p></li>
+<li><p>As in the previous exercises, you will need to <em>change the control</em> file and re-run CODEML. The control file "quick guide" might be helpful here (<a href="http://awarnach.mathstat.dal.ca/%7Ejoeb/PAML_lab/exercise3/ex3_control_file_QuickGuide.pdf">quick guide</a>).The objective is to compute the likelihood, and estimate ω parameters, under different models of how selection pressure changes in different parts of the tree. Because the relevant model information is contained in the tree file, you will need specify one of several tree files in each analysis, and change the control file so that it reads the required tree file. </p>
+
+<ul>
+<li><p>As always, you should change the name of the main result file (via <code>outfile=</code> in the control file) or you will overwrite your previous results.</p></li>
+<li><p>Change the model assumptions about branch specific <em>ω</em> values by changing the tree files (via <code>treefile=</code> and <code>model=</code>) set within the control file.</p></li>
+</ul></li>
+<li><p>Repeat step 3 for each of the four tree files that have been provided to you. Again, keep track of your results by using a table like <strong>Table E3</strong> shown in the slides (see <a href="http://awarnach.mathstat.dal.ca/%7Ejoeb/PAML_lab/exercise3/ex3_table_template.pdf">ex3 table template.pdf</a>). In addition, carry out likelihood ratio tests (LRT) of the hypotheses below. See the lecture notes for additional details about LRTs. Use 1 degree of freedom to obtain the <em>P</em>-value for each LRT. (Helpful for computing the <em>P</em>-value: <a href="https://homepage.divms.uiowa.edu/%7Embognar/applets/chisq.html">Chi-Square calculator</a>)</p>
+
+<ul>
+<li>H0 vs. H1 </li>
+<li>H0 vs. H2</li>
+<li>H2 vs. H3 </li>
+</ul></li>
+<li><p>Use your table of results to determine:</p>
+
+<ul>
+<li><p><em>Which model(s) are supported by the data?</em></p></li>
+<li><p><em>What biologcial scenario is the best explanation of Ldh gene-family evolution?</em></p></li>
+<li><p><em>Is there evidence of positive selection during the history of Ldh evolution?</em></p></li>
+<li><p><em>Are there any scenarios in which Ldh could have evolved by positive selection that would be undetectable by these LRTs?</em></p></li>
+</ul></li>
+</ol>
+
+<p><br></p>
+
+<h2 id="toc_6">Exercise 4</h2>
+
+<p>The objective of this exercise is to use a series of LRTs to <em>test for sites</em> evolving under positive selection in the nef gene. If you find significant evidence for positive selection, then identify the involved sites by using empirical Bayes methods.</p>
+
+<ol>
+<li><p>Obtain all the files for Exercise 4 (<strong>ex4_codeml.ctl.txt</strong>, <strong>ex4_seqfile.txt</strong>,  <strong>treeM0.txt,  treeM1.txt,  treeM2.txt,  treeM3.txt,  treeM7.txt,  treeM8.txt</strong>). When you are ready to run CODEML, remember to delete the <strong>ex4_</strong> prefix (the control file must be called <strong>codeml.ctl</strong>).</p></li>
+<li><p>If you plan to run two or more models at the same time, then create a separate directory for each run and place a copy of the sequence file, and the required control file and tree file in each directory.</p>
+
+<p><img src="./PAML_lab_files/Models_figure_v2.jpg" alt="Models_figure"></p></li>
+<li><p>As in all the previous exercises, you will need to <em>change the control file</em> and re-run CODEML several times. In this case you will be fitting six different codon models (M0, M1a, M2a, M3, M7 &amp; M8) to the example dataset. The control file "quick guide" might be helpful here (<a href="http://awarnach.mathstat.dal.ca/%7Ejoeb/PAML_lab/exercise4/ex4_control_file_QuickGuide.pdf">quick guide</a>).</p>
+
+<ul>
+<li><p>If you are running your analyses sequentially in the same directory, then you should <strong>change the name of the main result file</strong> (via <code>outfile=</code> in the control file) or you will overwrite your previous results.</p></li>
+<li><p>Set the tree file with <code>treefile=</code>. I have supplied tree files pre-loaded with the ML branch lengths for each model (hence you need to set a different tree for each model). This will greatly speed up your analyses, giving you more “beer time”. See the example control file for more details about treefile names\</p></li>
+<li><p>Set the codon model with <code>NSsites=</code>.</p></li>
+<li><p>Fix the value of kappa at the ML estimate with <code>kappa=</code>. Again, this will help speed up the analysis. See the control file for the value of kappa for each model.</p></li>
+<li><p>For some models you will also need to set the number of categories (ncatG) in the ω distribution:</p>
+
+<ul>
+<li><p>for M3 set <code>ncatG=3</code></p></li>
+<li><p>for M7 set <code>ncatG=10</code></p></li>
+<li><p>for M8 set <code>ncatG=10</code></p></li>
+</ul></li>
+<li><p>Once the analysis is complete, rename the rst file because subsequent runs will overwrite it!</p></li>
+<li><p>Repeat steps for each of the six codon models listed above.</p></li>
+</ul></li>
+<li><p>Keep track of your results (<a href="http://awarnach.mathstat.dal.ca/%7Ejoeb/PAML_lab/exercise4/ex4_HelpFile.pdf">ex4_HelpFile.pdf</a>) by using a table like <strong>Table E4</strong> shown in the slides (see <a href="http://awarnach.mathstat.dal.ca/%7Ejoeb/PAML_lab/exercise4/ex4_table_template.pdf">ex4 table template.pdf</a>).</p></li>
+<li><p>In addition, carry out the following likelihood ratio tests:</p>
+
+<ul>
+<li><p>M0 vs. M3 (4 degrees of freedom)</p></li>
+<li><p>M1a vs. M2a (2 degrees of freedom)</p></li>
+<li><p>M7 vs. M8 (2 degrees of freedom)</p></li>
+</ul></li>
+<li><p>Lastly, open the rst file generated when you ran model M3 (<a href="http://awarnach.mathstat.dal.ca/%7Ejoeb/PAML_lab/exercise4/ex4_rst_HelpFile.pdf">ex4_rst-HelpFile.pdf</a>). Locate the columns of posterior probabilities for each site under the three site-categories of this model. Use these data to produce the plot for the nef gene like the one shown below (<em>your plot will look different than the one shown below</em>).</p>
+
+<p><img src="./PAML_lab_files/Posteriors_v3.jpg" alt="Posterior_plot"></p></li>
+<li><p>As a final step, try to synthesize all your results and attempt a biological interpretation of the sort that you would want to publish within an actual research paper. The following two general questions should help get you going. I strongly encourage you to do this last step in collaboration with other workshop students; talk it through!</p>
+
+<ul>
+<li><p><em>What biological conclusions are well-supported by these data?</em></p></li>
+<li><p><em>What aspects of the results can you interpret according your prior biological knowledge of this, or similar, systems?</em></p></li>
+</ul></li>
+<li><p>OPTIONAL: Investigate how much extra computation is required to estimate the branch lengths from the data. (Recall, that I provided previous estimates of the MLEs for branch lengths withing the tree file!)</p>
+
+<ul>
+<li><p>Re-run model M0 as before (you did this in step 3 above), but this time note how quickly the program took to finish.  </p></li>
+<li><p>Now change the control file for model M0. Set <code>fix_blength = 0</code> The value 0 means that branch lengths in the tree file will be ignored and they will be estimated via maximum likelihood.</p></li>
+<li><p>Now re-run model M0 with <code>fix_blength = 0</code> and note how much time it took to finish this run.</p></li>
+<li><p><em>What is the effect of tree size on ML based hypothesis testing?</em></p></li>
+<li><p><em>Do you think branch lengths have a big impact on the likelihood of the data?  How about hypothesis testing?  Can you think of a way to use</em> <code>fix_blength = 2</code> <em>to check?</em></p></li>
+</ul></li>
+</ol>
+
+<p><br>
+<br></p>
+
+<h2 id="toc_7">NEXT STEPS...</h2>
+
+<p>Now that you have some experience with codon models, you might want to try out a tutorial covering more advanced topics. The advanced tutorial focuses on <strong>detecting episodic adaptive evolution</strong> via "Branch-Site Model A". </p>
+
+<p><img src="./PAML_lab_files/NextSteps_figure.jpg" alt="NextSteps_figure"></p>
+
+<p>The tutorial also includes <strong>additional activities</strong> about:</p>
+
+<ul>
+<li>identifying and labelling phylogenetic tree branches for input to branch-site codon models </li>
+<li>  detecting instabilities in your parameter estimates</li>
+<li>  carrying out robustness analyses</li>
+<li>  use of smoothed bootstrap aggregation (SBA) to correct for parameter estimate uncertainty and instability in codon models</li>
+</ul>
+
+<p>The protocols for each activity are published in <em>Protocols in Bioinformatics</em> (UNIT 6.15). This unit also presents <strong>recommendations for “best practices” when carrying out a large-scale evolutionary survey</strong> for episodic adaptive evolution by using PAML. </p>
+
+<p>You can take a look at the PDF file for <em>Protocols in Bioinformatics</em> UNIT 6.15 here: <a href="http://awarnach.mathstat.dal.ca/%7Ejoeb/PAML_lab/resources/UNIT6.15.pdf">UNIT 6.15</a></p>
+
+<p>The files required for this “advanced lab” are available via this Bitbucket repository: <a href="https://bitbucket.org/EvoWorks/protocol-inference-of-episodic-selection/downloads">repository-link</a></p>
+
+<p>[NOTE: I am updating and moving the archive; the download for the archive might be temporarily disabled.]</p>
+
+<p><br></p>
+
+
+
+
+
+
+
+<iframe id="TYdSZEcN" frameborder="0" src="./PAML_lab_files/translateSandbox.html" style="width: 0px; height: 0px; display: none;"></iframe><iframe id="buYhDFBd" frameborder="0" src="./PAML_lab_files/translateSandbox(1).html" style="width: 0px; height: 0px; display: none;"></iframe></body></html>
