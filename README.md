@@ -2,6 +2,8 @@
 
 Welcome to Bioinformatics for Everyone, an outreach project to make bioinformatics more accessible to students and scientists across the world! <br>
 
+🍄 Our **mission** is to promote equitable access to knowledge, resources and opportunities in evolutionary biology, empowering equity-deserving students to become scientists.
+
 🦋 We offer free workshops in universities! <br>
 _if you are interested in having a workshop at your university, please reach out at leticiamagpali@dal.ca <br>_
 
@@ -35,14 +37,19 @@ At the same time, biologists (you and me!) are not properly trained to use compu
 
 ## 🍄 Who makes Bioinformatics for everyone? ##
 
-Here's a list of our current collaborators:
+Organizers:
 * Letícia Magpali - Dalhousie University
-* Yuri Kulish - Dalhousie University
 * Joseph Bielawski - Dalhousie University
+
+Workshop collaborators:
+* Amy Kim - University of British Columbia
+* Yuri Kulish - Dalhousie University
+* Felipe André Silva - Universidade Estadual de Campinas
+* Fernando de Faria Franco - Universidade Federal de São Carlos
 
 ## 🍄 Our values ##
 
 🦋 Knowledge is plural and that's beautiful! <br>
 🦋 Knowledge should be open, equitably shared and accessible to everyone (whenever possible) <br>
-🦋 Science should be inclusive and participatory
+🦋 Science should be inclusive, acessible and collaborative
 
