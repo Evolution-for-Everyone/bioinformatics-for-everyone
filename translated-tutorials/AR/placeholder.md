@@ -1,4 +1,6 @@
-```markdown
+Below is the translated markdown wrapped in a fenced code block using quadruple backticks. When you copy it into a markdown file or viewer, the images, code blocks, and clickable links should render properly.
+
+````markdown
 # الدليل المتقدم لـ Codeml
 
 بقلم: جوزيف بيلاوسكي
@@ -42,24 +44,32 @@
 
 لعرض قائمة المعاملات اكتب:
 
-`ls ~/moledata`
+```
+ls ~/moledata
+```
 
 لعرض محتويات معمل PAML اكتب:
 
-`ls -1 ~/moledata/PamlLab`
+```
+ls -1 ~/moledata/PamlLab
+```
 
 هذا سيكشف عن الأدلة لكل تمرين:
 
-`ex1`  
-`ex2`  
-`ex3`  
-`ex4`
+```
+ex1
+ex2
+ex3
+ex4
+```
 
-الملفات موجودة بالفعل على الآلة الافتراضية التي تستخدمها. _ومع ذلك، سترغب في تشغيل كل تمرين في دليل منفصل تقوم بإنشائه_. لذا، أنشئ دليلاً جديداً. اسم الدليل الجديد يعود لك، ولكن اختر شيئاً توضيحياً (على سبيل المثال، ~/PAML_ex1).
+الملفات موجودة بالفعل على الآلة الافتراضية التي تستخدمها. _ومع ذلك، سترغب في تشغيل كل تمرين في دليل منفصل تقوم بإنشائه_. لذا، أنشئ دليلاً جديداً. اسم الدليل الجديد يعود لك، ولكن اختر شيئاً توضيحياً (على سبيل المثال، `~/PAML_ex1`).
 
 لـ _نسخ_ الملفات المطلوبة للتمرين 1 فقط اكتب:
 
-`cp ~/moledata/PamlLab/ex1/* ~/PAML_ex1`
+```
+cp ~/moledata/PamlLab/ex1/* ~/PAML_ex1
+```
 
 الآن أنت جاهز للقيام بالتمرين 1 ضمن `~/PAML_ex1`.
 
@@ -68,7 +78,9 @@
 
 إليك مثال للتمرين 1:
 
-`cp ex1_codeml.ctl codeml.ctl`
+```
+cp ex1_codeml.ctl codeml.ctl
+```
 
 تحذير: إعادة تشغيل PAML داخل دليل ستؤدي إلى استبدال جميع الملفات داخل ذلك الدليل! تأكد من إعادة تسمية جميع الملفات التي تريد الاحتفاظ بها!
 
@@ -218,4 +230,5 @@
 يمكنك إلقاء نظرة على ملف PDF للوحدة 6.15 من _بروتوكولات في المعلوماتية الحيوية_ هنا: [UNIT 6.15](http://awarnach.mathstat.dal.ca/%7Ejoeb/PAML_lab/resources/UNIT6.15.pdf)
 
 الملفات المطلوبة لهذا "المعمل المتقدم" متوفرة عبر هذا المستودع على Bitbucket: [repository-link](https://bitbucket.org/EvoWorks/protocol-inference-of-episodic-selection/downloads)
-```
+````
+
