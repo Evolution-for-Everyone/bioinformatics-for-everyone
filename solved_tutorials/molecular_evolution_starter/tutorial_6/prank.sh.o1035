@@ -1,0 +1,43 @@
+
+-----------------
+ PRANK v.170427:
+-----------------
+
+Input for the analysis
+ - aligning sequences in 'FOXP2_nuc_mafft_nostops.fasta'
+ - using inferred alignment guide tree
+
+Generating approximate guide tree.
+aligning 0 to 1 (2%)                    aligning 0 to 2 (4%)                    aligning 0 to 3 (6%)                    aligning 0 to 4 (8%)                    aligning 0 to 5 (11%)                    aligning 0 to 6 (13%)                    aligning 0 to 7 (15%)                    aligning 0 to 8 (17%)                    aligning 0 to 9 (20%)                    aligning 1 to 2 (22%)                    aligning 1 to 3 (24%)                    aligning 1 to 4 (26%)                    aligning 1 to 5 (28%)                    aligning 1 to 6 (31%)                    aligning 1 to 7 (33%)                    aligning 1 to 8 (35%)                    aligning 1 to 9 (37%)                    aligning 2 to 3 (40%)                    aligning 2 to 4 (42%)                    aligning 2 to 5 (44%)                    aligning 2 to 6 (46%)                    aligning 2 to 7 (48%)                    aligning 2 to 8 (51%)                    aligning 2 to 9 (53%)                    aligning 3 to 4 (55%)                    aligning 3 to 5 (57%)                    aligning 3 to 6 (60%)                    aligning 3 to 7 (62%)                    aligning 3 to 8 (64%)                    aligning 3 to 9 (66%)                    aligning 4 to 5 (68%)                    aligning 4 to 6 (71%)                    aligning 4 to 7 (73%)                    aligning 4 to 8 (75%)                    aligning 4 to 9 (77%)                    aligning 5 to 6 (80%)                    aligning 5 to 7 (82%)                    aligning 5 to 8 (84%)                    aligning 5 to 9 (86%)                    aligning 6 to 7 (88%)                    aligning 6 to 8 (91%)                    aligning 6 to 9 (93%)                    aligning 7 to 8 (95%)                    aligning 7 to 9 (97%)                    aligning 8 to 9 (100%)                    Correcting (arbitrarily) for multifurcating nodes.
+Correcting (arbitrarily) for multifurcating nodes.
+
+Generating multiple alignment: iteration 1.
+
+Alignment score: 1675
+Correcting (arbitrarily) for multifurcating nodes.
+
+Generating multiple alignment: iteration 2.
+
+Alignment score: 1661
+Correcting (arbitrarily) for multifurcating nodes.
+
+Generating multiple alignment: iteration 3.
+
+Alignment score: 1613
+Correcting (arbitrarily) for multifurcating nodes.
+
+Generating multiple alignment: iteration 4.
+
+Alignment score: 1608
+Correcting (arbitrarily) for multifurcating nodes.
+
+Generating multiple alignment: iteration 5.
+
+Alignment score: 1608
+
+
+Writing
+ - alignment to 'FOXP2_codon_prank.best.fas'
+
+Analysis done. Total time 3010s
+

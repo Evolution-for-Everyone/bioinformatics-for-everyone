@@ -1,0 +1,192 @@
+IQ-TREE 2.2.0-beta COVID-edition built Dec 21 2021
+
+Input file name: FOXP2_codon_prank.best.fas
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 729911
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 10 sequences with 833 codon sites
+Number of constant sites: 571 (= 68.5474% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 571 (= 68.5474% of all sites)
+Number of parsimony informative sites: 133
+Number of distinct site patterns: 374
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: MG+F3X4+G4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+MG+F3X4+G4        -5234.758   10525.516 - 2.36e-34   10527.535 - 5.83e-31   10657.816 +    0.891
+MG+F3X4+I         -5237.832   10531.664 - 1.09e-35   10533.684 - 2.69e-32   10663.965 -   0.0412
+MGK+F3X4+G4       -5234.759   10527.519 - 8.66e-35   10529.685 - 1.99e-31   10664.545 -   0.0308
+MG+F3X4+I+G4      -5235.028   10528.056 - 6.62e-35   10530.223 - 1.52e-31   10665.082 -   0.0236
+MG+F3X4+R2        -5235.840   10529.681 - 2.94e-35   10531.848 - 6.75e-32   10666.707 -   0.0105
+MGK+F3X4+I        -5237.816   10533.633 - 4.07e-36   10535.799 - 9.36e-33   10670.658 -  0.00145
+MGK+F3X4+I+G4     -5235.029   10530.057 - 2.43e-35   10532.376 - 5.18e-32   10671.808 - 0.000816
+MGK+F3X4+R2       -5235.838   10531.677 - 1.08e-35   10533.996 -  2.3e-32   10673.428 - 0.000363
+GY+F3X4+G4        -5241.882   10541.765 - 6.98e-38   10543.932 -  1.6e-34   10678.791 - 2.49e-05
+GY+F3X4+R2        -5241.719   10543.437 - 3.03e-38   10545.757 - 6.44e-35   10685.188 - 1.01e-06
+GY+F3X4+I+G4      -5242.279   10544.559 - 1.73e-38   10546.878 - 3.68e-35   10686.310 - 5.79e-07
+GY+F3X4+I         -5246.630   10551.259 - 6.06e-40   10553.426 - 1.39e-36   10688.285 - 2.16e-07
+GY+F3X4+R3        -5240.530   10545.060 - 1.34e-38   10547.700 - 2.44e-35   10696.261 -    4e-09
+SCHN05+FU+G4      -5294.682   10625.364 - 4.91e-56   10626.204 - 2.19e-52   10710.415 - 3.38e-12
+SCHN05+FU+R2      -5294.968   10627.935 - 1.36e-56   10628.870 - 5.77e-53   10717.711 - 8.79e-14
+SCHN05+FU+I+G4    -5295.067   10628.134 - 1.23e-56   10629.069 - 5.22e-53   10717.909 - 7.96e-14
+SCHN05+FU+I       -5298.952   10633.904 - 6.86e-58   10634.744 - 3.06e-54   10718.954 - 4.72e-14
+MG+F1X4+G4        -5287.335   10618.670 - 1.39e-54   10619.919 - 5.07e-51   10722.621 - 7.55e-15
+GY+F1X4+G4        -5284.771   10615.543 - 6.66e-54   10616.907 - 2.28e-50   10724.219 -  3.4e-15
+MG+F1X4+I         -5289.374   10622.749 - 1.81e-55   10623.998 - 6.59e-52   10726.700 - 9.82e-16
+GY+F1X4+I         -5286.553   10619.106 - 1.12e-54   10620.471 - 3.84e-51   10727.782 - 5.72e-16
+MGK+F1X4+G4       -5287.334   10620.669 - 5.13e-55   10622.033 - 1.76e-51   10729.344 - 2.62e-16
+MG+F1X4+I+G4      -5287.431   10620.862 - 4.66e-55   10622.227 -  1.6e-51   10729.538 - 2.38e-16
+MG+F1X4+R2        -5288.095   10622.190 -  2.4e-55   10623.554 - 8.23e-52   10730.865 - 1.22e-16
+GY+F1X4+I+G4      -5284.892   10617.785 - 2.17e-54   10619.270 - 7.01e-51   10731.186 - 1.04e-16
+GY+F1X4+R2        -5285.415   10618.829 - 1.29e-54   10620.314 - 4.16e-51   10732.230 - 6.18e-17
+MGK+F1X4+I        -5289.357   10624.715 - 6.79e-56   10626.079 - 2.33e-52   10733.391 - 3.46e-17
+MGK+F1X4+I+G4     -5287.430   10622.860 - 1.72e-55   10624.345 - 5.54e-52   10736.260 - 8.24e-18
+MGK+F1X4+R2       -5288.088   10624.176 - 8.89e-56   10625.661 - 2.87e-52   10737.577 - 4.27e-18
+GY+F3X4           -5275.569   10607.138 - 4.45e-52   10609.158 -  1.1e-48   10739.439 - 1.68e-18
+GY+F+G4           -5107.789   10375.579 +   0.0853   10392.813 +    0.105   10753.581 - 1.43e-21
+GY+F+R2           -5104.903   10371.805 +    0.563   10389.494 +    0.551   10754.533 - 8.88e-22
+GY+F+I+G4         -5105.372   10372.744 +    0.352   10390.432 +    0.344   10755.471 - 5.55e-22
+GY+F+I            -5118.207   10396.414 - 2.55e-06   10413.648 - 3.13e-06   10774.416 - 4.27e-26
+SCHN05+F3X4+G4    -5304.324   10662.648 - 3.93e-64   10664.526 - 1.04e-60   10790.224 - 1.58e-29
+SCHN05+F3X4+I+G4   -5301.645   10659.290 - 2.11e-63   10661.310 - 5.21e-60   10791.591 - 7.96e-30
+SCHN05+F3X4+I     -5306.919   10667.837 - 2.94e-65   10669.715 - 7.79e-62   10795.413 - 1.18e-30
+SCHN05+F3X4+R2    -5304.717   10665.434 - 9.76e-65   10667.454 - 2.41e-61   10797.735 - 3.69e-31
+KOSI07+F3X4+R2    -5314.309   10684.618 - 6.66e-69   10686.638 - 1.65e-65   10816.919 - 2.52e-35
+KOSI07+F3X4+G4    -5319.635   10693.270 - 8.81e-71   10695.148 - 2.34e-67   10820.846 - 3.54e-36
+KOSI07+F3X4+I+G4   -5317.699   10691.399 - 2.25e-70   10693.418 - 5.55e-67   10823.699 - 8.49e-37
+SCHN05+F+I+G4     -5147.832   10453.664 - 9.44e-19   10470.451 - 1.45e-18   10826.942 - 1.68e-37
+SCHN05+F+G4       -5153.439   10462.878 - 9.42e-21   10479.223 -  1.8e-20   10831.431 - 1.78e-38
+KOSI07+F3X4+I     -5324.990   10703.981 - 4.16e-73   10705.859 -  1.1e-69   10831.557 - 1.67e-38
+KOSI07+FU+G4      -5360.135   10756.270 - 1.84e-84   10757.110 -  8.2e-81   10841.321 - 1.27e-40
+SCHN05+F+R2       -5155.165   10468.329 - 6.17e-22   10485.115 - 9.48e-22   10841.607 -  1.1e-40
+SCHN05+F1X4+I     -5350.762   10743.524 - 1.08e-81   10744.663 - 4.14e-78   10842.750 -  6.2e-41
+SCHN05+F1X4+G4    -5351.833   10745.667 - 3.69e-82   10746.806 - 1.42e-78   10844.892 - 2.12e-41
+SCHN05+F1X4+I+G4   -5348.933   10741.867 - 2.47e-81   10743.116 - 8.97e-78   10845.817 - 1.34e-41
+KOSI07+FU+I+G4    -5360.522   10759.045 -  4.6e-85   10759.979 - 1.95e-81   10848.820 - 2.98e-42
+KOSI07+FU+I       -5363.998   10763.996 - 3.86e-86   10764.837 - 1.72e-82   10849.047 - 2.66e-42
+SCHN05+F1X4+R2    -5350.873   10745.746 - 3.55e-82   10746.995 - 1.29e-78   10849.697 - 1.92e-42
+SCHN05+F+I        -5162.627   10481.254 - 9.63e-25   10497.599 - 1.85e-24   10849.807 - 1.82e-42
+KOSI07+FU+R2      -5361.573   10761.147 - 1.61e-85   10762.082 - 6.83e-82   10850.923 - 1.04e-42
+KOSI07+F1X4+G4    -5372.271   10786.543 - 4.91e-91   10787.682 - 1.89e-87   10885.769 - 2.82e-50
+KOSI07+F1X4+I+G4   -5370.331   10784.662 - 1.26e-90   10785.912 - 4.57e-87   10888.613 - 6.81e-51
+KOSI07+F1X4+I     -5373.731   10789.462 - 1.14e-91   10790.601 - 4.38e-88   10888.687 - 6.56e-51
+KOSI07+F1X4+R2    -5372.408   10788.817 - 1.58e-91   10790.066 - 5.72e-88   10892.768 - 8.53e-52
+KOSI07+F+I+G4     -5183.814   10525.628 - 2.23e-34   10542.415 - 3.42e-34   10898.906 - 3.96e-53
+KOSI07+F+G4       -5191.428   10538.855 - 2.99e-37   10555.200 - 5.73e-37   10907.408 - 5.65e-55
+KOSI07+F+R2       -5194.751   10547.503 - 3.96e-39   10564.289 - 6.09e-39   10920.781 - 7.05e-58
+KOSI07+F+I        -5201.005   10558.010 - 2.07e-41   10574.355 - 3.97e-41   10926.563 - 3.91e-59
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: MG+F3X4+G4
+
+State frequencies: 
+  pi(AAA) = 0.0286  pi(AAC) = 0.0223  pi(AAG) = 0.0296  pi(AAT) = 0.0231
+  pi(ACA) = 0.0179  pi(ACC) = 0.0140  pi(ACG) = 0.0186  pi(ACT) = 0.0145
+  pi(AGA) = 0.0110  pi(AGC) = 0.0086  pi(AGG) = 0.0114  pi(AGT) = 0.0089
+  pi(ATA) = 0.0174  pi(ATC) = 0.0135  pi(ATG) = 0.0180  pi(ATT) = 0.0140
+  pi(CAA) = 0.0383  pi(CAC) = 0.0299  pi(CAG) = 0.0397  pi(CAT) = 0.0310
+  pi(CCA) = 0.0240  pi(CCC) = 0.0188  pi(CCG) = 0.0249  pi(CCT) = 0.0194
+  pi(CGA) = 0.0148  pi(CGC) = 0.0115  pi(CGG) = 0.0153  pi(CGT) = 0.0119
+  pi(CTA) = 0.0233  pi(CTC) = 0.0182  pi(CTG) = 0.0242  pi(CTT) = 0.0188
+  pi(GAA) = 0.0269  pi(GAC) = 0.0210  pi(GAG) = 0.0279  pi(GAT) = 0.0218
+  pi(GCA) = 0.0169  pi(GCC) = 0.0132  pi(GCG) = 0.0175  pi(GCT) = 0.0137
+  pi(GGA) = 0.0104  pi(GGC) = 0.0081  pi(GGG) = 0.0108  pi(GGT) = 0.0084
+  pi(GTA) = 0.0164  pi(GTC) = 0.0128  pi(GTG) = 0.0170  pi(GTT) = 0.0132
+  pi(TAC) = 0.0120  pi(TAT) = 0.0124  pi(TCA) = 0.0097  pi(TCC) = 0.0075
+  pi(TCG) = 0.0100  pi(TCT) = 0.0078  pi(TGC) = 0.0046  pi(TGG) = 0.0061
+  pi(TGT) = 0.0048  pi(TTA) = 0.0094  pi(TTC) = 0.0073  pi(TTG) = 0.0097
+  pi(TTT) = 0.0076
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.6805
+
+ Category  Relative_rate  Proportion
+  1         0.0700         0.2500
+  2         0.3542         0.2500
+  3         0.9174         0.2500
+  4         2.6584         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -5234.7578 (s.e. 98.2769)
+Unconstrained log-likelihood (without tree): -4406.1996
+Number of free parameters (#branches + #model parameters): 28
+Akaike information criterion (AIC) score: 10525.5155
+Corrected Akaike information criterion (AICc) score: 10527.5354
+Bayesian information criterion (BIC) score: 10657.8164
+
+Total tree length (sum of branch lengths): 0.6007
+Sum of internal branch lengths: 0.2223 (37.0156% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'FOXP2_Mluc' is drawn at root
+
+NOTE: Branch lengths are interpreted as number of nucleotide substitutions per codon site!
+      Rescale them by 1/3 if you want to have #nt substitutions per nt site
+
++-----------------------------------------------------------FOXP2_Mluc
+|
+|                                   +--FOXP2_Ttru
+|             +---------------------|
+|             |                     +--FOXP2_Oorc
+|  +----------|
+|  |          +-------------------FOXP2_Btau
++--|
+|  |                        +------------------FOXP2_Tman
+|  |      +-----------------|
+|  |      |                 +--------------------FOXP2_Lafr
+|  +------|
+|         |                      +--FOXP2_Hsap
+|         +----------------------|
+|                                +--FOXP2_Ptro
+|
+|           +---------------------FOXP2_Pvit
++-----------|
+            +-----------------FOXP2_Clup
+
+Tree in newick format:
+
+(FOXP2_Mluc:0.1334108937,(((FOXP2_Ttru:0.0039836276,FOXP2_Oorc:0.0034600659):0.0494278906,FOXP2_Btau:0.0460681583):0.0258571022,((FOXP2_Tman:0.0428556071,FOXP2_Lafr:0.0469975188):0.0420472067,(FOXP2_Hsap:0.0073949406,FOXP2_Ptro:0.0040306711):0.0517708539):0.0162436038):0.0082630031,(FOXP2_Pvit:0.0489373543,FOXP2_Clup:0.0412009535):0.0287390057);
+
+TIME STAMP
+----------
+
+Date and time: Fri Apr  4 17:48:45 2025
+Total CPU time used: 135.752 seconds (0h:2m:15s)
+Total wall-clock time used: 135.829 seconds (0h:2m:15s)
+
